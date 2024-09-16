@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" http-equiv="Cache-Control"
+        content="max-age=604800" />
+    <meta name="Práctica Pinterest" content="Ejercicio práctico para la correcta utilización de etiquetas" />
+    <title>Pinterest</title>
+    <link rel="canonical" href="https://tourmaline-crumble-de1732.netlify.app/" />
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png"
+        alt="pinterest icon" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Pinterest_Logo.svg/1200px-Pinterest_Logo.svg.png"
+                    alt="pinterest logo" height="50px" /></a>
+            <ul>
+                <li><a class="btnNav" href="#">Hoy</a></li>
+                <li><a class="btnNav" href="#">Explorar</a></li>
+                <li>
+                    <form action="#">
+                        <input type="text" placeholder="Buscar..." />
+                        <button type="submit">
+                            <img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/search-512.png" width="10px"
+                                alt="search icon" />
+                        </button>
+                    </form>
+                </li>
+                <li><a class="btnNav" href="#">Info</a></li>
+                <li><a class="btnNav" href="#">Empresa</a></li>
+                <li><a class="btnNav" href="#"> Blog</a></li>
+                <li><a id="btnLogIn" href="#">Iniciar Sesión</a></li>
+                <li><a id="btnSignIn" class="btnNav" href="#">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section>
+                <h1>Explora y descubre nuevas ideas</h1>
+            </section>
+            <section>
+                <div id="randomImages">
+                    <img loading="lazy"
+                        src="https://res.cloudinary.com/dbfqubeur/image/upload/v1724694675/cld-sample-4.jpg"
+                        alt="food" />
+                    <img loading="lazy"
+                        src="https://res.cloudinary.com/dbfqubeur/image/upload/v1724694675/cld-sample-2.jpg"
+                        alt="mountains" />
+                    <img loading="lazy"
+                        src="https://res.cloudinary.com/dbfqubeur/image/upload/v1724694675/cld-sample-3.jpg"
+                        alt="basket" />
+                    <img loading="lazy"
+                        src="https://res.cloudinary.com/dbfqubeur/image/upload/v1724694675/cld-sample.jpg"
+                        alt="smile" />
+                </div>
+                <div id="btnScroll">
+                    <a href="#secondArticle">⌵</a>
+                </div>
+            </section>
+        </article>
+        <article id="secondArticle">
+            <section class="column" id="leftColumnChicken">
+            </section>
+            <section class="column">
+                <div id="rightColumnChicken">
+                    <h2>Busca una idea</h2>
+                    <p class="columnText">¿Qué es lo siguiente que quieres probar? Piensa en algo que te interese, como "receta sencilla de
+                        pollo para cenar", y a ver qué descubres.</p>
+                    <div id="btnExplore"><a href="#">Explorar</a></div>
+                </div>
+            </section>
+        </article>
+        <article id="thirdArticle">
+            <section class="column">
+                <div id="leftColumnIdea">
+                    <h2>Guarda las ideas que te gusten</h2>
+                    <p class="columnText">¿Qué es lo siguiente que quieres probar? Piensa en algo que te interese, como "receta sencilla de
+                        pollo para cenar", y a ver qué descubres.</p>
+                    <div id="btnExplore"><a href="#">Explorar</a></div>
+                </div>
+            </section>
+            <section class="column" id="rightColumnIdea">
+                <div id="scroller">
+                    <img class="imgIdea" src="https://res.cloudinary.com/dbfqubeur/image/upload/v1724694672/samples/shoe.jpg" alt="shoe">
+                    <img class="imgIdea" src="https://res.cloudinary.com/dbfqubeur/image/upload/v1724694666/samples/ecommerce/car-interior-design.jpg" alt="car design">
+                    <img class="imgIdea" src="https://res.cloudinary.com/dbfqubeur/image/upload/v1724694663/samples/animals/cat.jpg" alt="cat">
+                    <img class="imgIdea" src="https://res.cloudinary.com/dbfqubeur/image/upload/v1724694674/samples/woman-on-a-football-field.jpg" alt="woman on a football field">
+                    <img class="imgIdea" src="https://res.cloudinary.com/dbfqubeur/image/upload/v1724694674/samples/chair-and-coffee-table.jpg" alt="chair and coffee table">
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Creado por Alberto Artieda López</p>
+    </footer>
+</body>
+
+</html>

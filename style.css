@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+/** HEADER **/
+
+header {
+    width: 100%;
+    top: 0;
+    position: sticky;
+    padding: 10px;
+    background-color: rgb(226, 226, 226);
+    z-index: +1;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.btnNav {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+#btnLogIn {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    background-color: #bd081c;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px;
+}
+
+#btnSignIn {
+    background-color: white;
+    border-radius: 15px;
+    width: 120px;
+    height: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+/** 1st ARTICLE **/
+
+article {
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+#randomImages {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#randomImages img {
+    margin: auto;
+    width: 320px;
+}
+
+#btnScroll {
+    background-color: #bd081c;
+    width: 48px;
+    height: 48px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: MoveUpDown 1s linear infinite;
+    position: absolute;
+    left: 49%;
+    bottom: 10px;
+}
+
+@keyframes MoveUpDown {
+
+    0%,
+    50% {
+        bottom: 10;
+    }
+
+    50% {
+        bottom: 25px;
+    }
+}
+
+#btnScroll a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+/** 2nd ARTICLE **/
+
+#secondArticle {
+    overflow: hidden;
+    background-color: #FFFC91;
+}
+
+.column {
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+#leftColumnChicken {
+    background-image: url("https://invitadoinvierno.com/wp-content/uploads/2023/06/receta-pollo-verduras-freidora-aire-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#rightColumnChicken {
+    color: #BF1515;
+    margin: 60px;
+    max-width: 75%;
+    width: calc(100% - 10px);
+}
+
+.columnText {
+    font-size: 24px;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+#btnExplore {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#btnExplore a {
+    background-color: #bd081c;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    width: 120px;
+}
+
+#btnExplore a:hover {
+    background-color: darkred;
+}
+
+/** 3th ARTICLE **/
+
+#thirdArticle {
+    overflow: hidden;
+    background-color: #DAFFF7;
+}
+
+#leftColumnIdea {
+    color: #027368;
+    margin: 60px;
+    max-width: 85%;
+    width: calc(100% - 10px);
+}
+
+#scroller {
+    background-color: #DAFFF7;
+    height: 450px;
+    width: 350px;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    scrollbar-color: #027368 #DAFFF7;
+  }
+
+  #scroller > img {
+    scroll-snap-align: none center;
+  }
+
+  .imgIdea {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+  }
+
+/** FOOTER **/
+
+footer {
+    background-color: #bd081c;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
